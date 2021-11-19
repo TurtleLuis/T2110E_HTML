@@ -1,0 +1,29 @@
+body{
+    width: 800px;
+}
+p{
+
+}
+h6{
+    text-align: right;
+    font-size: 16px;
+}
+h1{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-style: italic;
+    color: red;
+}
+h2{
+    text-align: left;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: 400;
+}
+h3{
+    text-align: left;
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: 400;
+}
