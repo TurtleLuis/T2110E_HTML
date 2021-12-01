@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab S6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/LabS6.css">
+</head>
+<body>
+    <div class="All">
+        <main class="Section">
+            <p>Create task</p>
+            <form method="get" action="#">
+                <input class="Same Box" type="text" name="Type" placeholder="Type" required/>
+                <br/>
+                <div class="Row">
+                    <select class="Company Box Row Row-1" name="Company" placeholder="Company" required>
+                        <option selected>Company</option>
+                        <option value="na">CT Cổ phần Nam Á</option>
+                        <option value="ad">CT Cổ phần Á Đông</option>
+                        <option value="bd">CT Cổ phần Bắc Dương</option>
+                        <option value="na"tl>CT Cổ phần Tiến Lùi</option>
+                        <option value="nd">CT Cổ phần Nam Đông</option>
+                    </select>
+                    <div class="Row-2">
+                        <select class="Opportunity Box Row Row-2-1" name="Opportunity" required>
+                            <option selected>Opportunity</option>
+                            <option>CT Cổ phần Nam Á</option>
+                            <option>CT Cổ phần Nam Á</option>
+                            <option>CT Cổ phần Á Đông</option>
+                            <option>CT Cổ phần Bắc Dương</option>
+                            <option>CT Cổ phần Tiến Lùi</option>
+                            <option>CT Cổ phần Nam Đông</option>
+                        </select>
+                        <p class="text-1">Optional</p>
+                    </div>
+                </div>
+                <div class="Cc">
+                    <input class="Box Same" type="text" name="Taskname" placeholder="Task Name">
+                    <input class="Box Same" type="text" name="Cc" placeholder="CC">
+                    <p class="text-2">Optional</p>
+                </div>
+                <div class="Select">
+                    <div class="Select-1">
+                        <label class="color">Nature of request</label>
+                        <label class="text-3"><input type="checkbox" name="Adsreview" style="text-align: center; vertical-align: middle" required>Ads review</label>
+                        <label class="text-3"><input type="checkbox" name="Keyreview" style="text-align: center; vertical-align: middle" required>Keywords review</label>
+                        <label class="text-3"><input type="checkbox" name="Extreview" style="text-align: center; vertical-align: middle" required>Extensions review</label>
+                    </div>
+                    <div class="Select-2">
+                        <label class="color">Current reviewable status</label>
+                        <label class="text-3"><input type="radio" name="Approved" style="text-align: center; vertical-align: middle" required>Ads review</label>
+                        <label class="text-3"><input type="radio" name="Not Approved" style="text-align: center; vertical-align: middle" required>Keywords review</label>
+                    </div>
+                </div>
+                <div class="Button">
+                    <button class="Button-1" type="submit">Submit</button>
+                    <button class="Button-1" type="reset">Reset</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

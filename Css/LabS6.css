@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #222222;
+    background-color: #eeeeee;
+}
+.All{
+    background-color:white;
+    width: 400px;
+    height: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.Section{
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    padding-top: 10px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+}
+.Same{
+    width: 100%;
+}
+.Box{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #e1e0e0;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #777474;
+    padding-left: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.Row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Row-1{
+    color: gray;
+}
+.Row-2-1{
+    color: gray;
+}
+.Opportunity{
+    width: 160px;
+
+}
+.Company{
+    width: 160px;
+}
+.Select{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.Select-1{
+    width: 140px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    height: 40px;
+}
+.Select-2{
+    width: 140px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    height: 40px;
+}
+.color{
+    color: gray;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+.text-1{
+    margin-top: -18px;
+    padding-left: 14px;
+    font-size: 10px;
+    color: gray;
+}
+.text-2{
+    margin-top: -18px;
+    padding-left: 11px;
+    font-size: 10px;
+    color: gray;
+}
+.text-3{
+    font-size: 10px;
+    margin-bottom: 7px;
+}
+.Button{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Button-1{
+    width: 35px;
+    font-size: 10px;
+    margin-bottom: -50px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    box-shadow: gray;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+
+
