@@ -1,0 +1,112 @@
+*{
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #222222;
+    text-align: left;
+    background-color: #eeeeee;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+p{
+    margin-bottom: 10px;;
+}
+.Section{
+    float: left;
+    width: 100%;
+}
+.Container{
+    float: none;
+    width: 1200px;
+    margin: 0 auto;
+}
+.Header{
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    padding: 20px 0;
+}
+.logo{
+    float: left;
+    width: 33%;
+}
+.toplinks{
+    float: right;
+}
+.logo a{
+    font-size: 28px;
+    color: #222222;
+    font-weight: 700;
+}
+.logo p{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+.toplinks li{
+    list-style: none;
+    float: left;
+    margin-left: 25px;
+}
+.toplinks li a{
+    color: #222222;
+    font-weight: 500;
+    line-height: 52.5px;
+}
+.Nav{
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    padding: 20px 0;
+}
+.Menu li{
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+}
+.Menu li.Last{
+    float: right;
+    margin: 0;
+    font-weight: 500;
+}
+.Menu li a{
+    color: #222222;
+    font-weight: 500;
+}
+.Main{
+    margin-top: 30px;
+}
+.Content{
+    float: left;
+    width: 66.67%;
+    padding-right: 15px;
+}
+.Sidebar{
+    float: left;
+    width: 33.3%;
+    padding-left: 35px;
+}
+.Content .Entry{
+    float: left;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+}
+.Sidebar .Block{
+    float: left;
+    width: 100%;
+    padding: 30px;
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+.Sidebar .Black{
+    background-color: gray;
+}
