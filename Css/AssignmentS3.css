@@ -1,0 +1,21 @@
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+.item{
+    margin-left: 10px;
+    transition: 0.4s;
+}
+.item:hover{
+    background-color: #cbbebe;
+    color: black;
+}
+a{
+    text-decoration: none;
+}

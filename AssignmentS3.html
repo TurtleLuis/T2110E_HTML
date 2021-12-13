@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment S3</title>
+    <link rel="stylesheet" href="css/AssignmentS3.css">
+</head>
+<body>
+    <h1>Xác định vị trí trong Tabs</h1>
+    <ul class="menu">
+        <a href="#"><li onclick="home()" class="item">Home</li></a>
+        <a href="#"><li onclick="profile()" class="item">Profile</li></a>
+        <a href="#"><li onclick="mess()" class="item">Messages</li></a>
+        <a href="#"><li onclick="setting()" class="item">Setting</li></a>
+    </ul>
+    <p id="text"></p>
+    <script type="text/javascript">
+        var text = document.getElementById("text");
+        console.log(text);
+        function home(){
+            text.innerText = "This is Home content";
+        }
+        function profile(){
+            text.innerText = "This is Profile content";
+        }
+        function mess(){
+            text.innerText = "This is Messages content";
+        }
+        function setting(){
+            text.innerText = "This is Setting content";
+        }
+    </script>
+</body>
+</html>
