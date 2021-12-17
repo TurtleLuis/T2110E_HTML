@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #222222;
+    text-align: left;
+    background-color: #19b2c2;
+}
+a{
+    text-decoration: none;
+}
+.Container{
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.Up{
+    background-color: #a210d2;
+    color: white;
+    width: 100%;
+    height: 50px;
+}
+.Icon{
+    margin-top: 10px;
+}
+.Icon:after{
+    content: "";
+    border: 11px rgba(255, 215, 0, 0) solid;
+    border-top-color: #a210d2;
+}
+h1{
+    font-weight: 500;
+    font-size: 18px
+}
+.Container .Up .fa-user-tie{
+    margin-top: 5px;
+}
+.Small-Body{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20px;
+}
+.Small-Body .User .fa-user-tie{
+    background-color:  #a210d2;
+    color: white;
+    width: 20px;
+}
+.Small-Body .Password .fa-lock{
+    background-color:  #a210d2;
+    color: white;
+    width: 20px;
+}
+.Small-Body .Email .fa-envelope{
+    background-color:  #a210d2;
+    color: white;
+    width: 20px;
+}
+.Small-Body .User .fa-user-tie{
+    background-color:  #a210d2;
+    color: white;
+    width: 20px;
+}
+.Check-Box{
+    font-size: 10px;
+}
+.Sign-up{
+    width: 100%;
+    height: 20px;
+    background-color: #a210d2;
+    margin-top: 10px;
+}
+.Sign-up a{
+    color: white;
+}
+p{
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+
