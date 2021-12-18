@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment S4</title>
+    <link rel="stylesheet" href="Css/AssignmentS4.css">
+</head>
+<body>
+<div id="content">
+    <div class="block">
+        <div class="timeanddate">
+            hello
+        </div>
+        <div class="tempvsicon">
+            <div class="temp">nhiet do</div>
+            <div class="icon">icon</div>
+        </div>
+        <div class="discription">
+            discription
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript">
+    $.ajax(
+        {
+            url:"https://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",
+            method:"GET",
+            success:function (data) {
+                var bl=document.getElementById('content');
+                for(var i=0;i<data.list.length;i++){
+                    bl.innerHTML=bl.innerHTML+'  <div class="block">\n' +
+                        '       <div class="timeanddate">\n' +
+                        '           hello\n' +
+                        '           </div>\n' +
+                        '           <div class="tempvsicon">\n' +
+                        '               <div class="temp">nhiet do</div>\n' +
+                        '               <div class="icon">icon</div>\n' +
+                        '           </div>\n' +
+                        '           <div class="discription">\n' +
+                        '           discription\n' +
+                        '           </div>\n' +
+                        '   </div>';
+                    var date= data.list[i].dt_txt;
+                    var td= document.getElementsByClassName('timeanddate');
+                    td[i].innerHTML=(date);
+                    var temp= data.list[i].main.temp;
+                    var tp=document.getElementsByClassName('temp')
+                    tp[i].innerHTML=( "Nhiệt độ: "+temp + "<sup>o</sup> C");
+                    var icon = data.list[i].weather[0].icon;
+                    var ic=document.getElementsByClassName('icon');
+                    ic[i].innerHTML=('<img src="http://openweathermap.org/img/wn/'+icon+'@2x.png"/>');
+                    var discrition = data.list[i].weather[0].description;
+                    var dis=document.getElementsByClassName('discription')
+                    dis[i].innerHTML=( "Miêu tả: "+discrition);
+                }
+            }
+        }
+    )
+</script>
+</body>
+</html>
