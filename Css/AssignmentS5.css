@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.title{
+    background:lightblue;
+    width: 100%;
+    height: 192px;
+}
+.title p{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color:black;
+    line-height: 192px;
+}
+.content{
+    padding: 30px;
+}
+.block{
+    width: 29%;
+    height: 500px;
+    float: left;
+    background-color:antiquewhite;
+    margin: 20px;
+    border: 2px solid black;
+}
+.block p{
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    width: 100%;
+    height: 30%;
+}
+.price{
+    font-size: 48px;
+    color:black;
+    font-weight: 800;
+    text-align: center;
+    float: bottom;
+}

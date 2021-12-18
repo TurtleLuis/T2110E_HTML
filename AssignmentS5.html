@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment S5</title>
+    <link rel="stylesheet" href="Css/AssignmentS5.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="title">
+        <p> Clothing</p>
+    </div>
+    <div class="content">
+    </div>
+</div>
+<script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript">
+    $.ajax({
+        url:"https://foodgroup.herokuapp.com/api/category/3",
+        method:"GET",
+        success:function (dt){
+            for( var i=0; i<dt.data.foods.length;i++){
+                var name=dt.data.foods[i].name;
+                var image=dt.data.foods[i].image;
+                var dis=dt.data.foods[i].description;
+                var pr=dt.data.foods[i].price;
+                var x=' <div class="block">\n' +
+                    '           <p class="name">'+name+'</p>\n' +
+                    '           <img src="'+image+'" width="100%" height="50%" alt=" Đang tải ảnh"/>\n' +
+                    '           <div class="description">'+dis+'</div>\n' +
+                    '           <div class="price">'+pr+'Đ</div>\n' +
+                    '       </div>';
+                $('.content').append(x);
+            }
+        }
+    })
+
+</script>
+</body>
+</html>
